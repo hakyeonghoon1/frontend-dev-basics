@@ -28,7 +28,9 @@
 	margin-left:20px;
 }
 .search-box input, .search-box button, .search-box a{
+	float:left;
 	display:block;
+	border:2px solid #19CE60;
 }
 .search-box input{
 	padding:10px;
@@ -43,6 +45,14 @@
 	background: url('/ch03/images/nsplite.png') no-repeat -300px -279px/ 444px 439px;
 	
 }
+.dropdown{
+	text-indent:2000%;
+	overflow:hidden;
+	width:10px;
+	height:5px;
+	background: url('/ch03/images/nsplite.png') no-repeat -96px -296px/ 444px 439px;
+}
+
 </style>
 </head>
 <body>
@@ -51,7 +61,7 @@
 		<div class="search-box">
 			<input type="text"/>
 			<a href="#" class="keyboard">키보드</a>
-			<a href="#">드롭다운</a>
+			<a href="#" class="dropdown">드롭다운</a>
 			<div class="btn-search">
 				<button>돋보기</button>
 			</div>			
