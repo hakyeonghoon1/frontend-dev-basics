@@ -24,8 +24,8 @@
  * 자바스크립트의 객체를 구분하는 방법
  * 1.내장(Built-In, Native, Engine)객체
  *   자바스크립트 엔진안에 미리 내장되어 있는 객체
- *   Number, Boolean, Date, RegExp, .....
- *   ParseInt, setTimeout
+ *   Number, Boolean, Date, RegExp, .....   :생성자 함수
+ *   ParseInt, setTimeout                   :일반 함수 
  * 2.호스트 객체
  *   자바스크립트 엔진이 임베디드된 환경(호스트)의 객체(자바스크립트 접근 가능)
  *   호스트 환경이 브라우저라면: document, location, XmlHttpRequest window
