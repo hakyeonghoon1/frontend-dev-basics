@@ -3,7 +3,7 @@
 	
 var tabBox = {
 	
-	init:function(){
+	init : function(){
 		window.addEventListener("load", this.onWindowLoad.bind(this));
 	},
 	onTabClicked : function(){
@@ -15,7 +15,7 @@ var tabBox = {
 		//select
 		this.className ="selected";
 	},
-	onWindowLoad: function(){
+	onWindowLoad : function(){
 		var divTabBox = document.getElementsByClassName("tab-box")[0];
 		var ul = divTabBox.childNodes[1];
 		
@@ -25,6 +25,5 @@ var tabBox = {
 		for(var i=0; i<liTabs.length;i++){
 			liTabs[i].addEventListener("click", this.onTabClicked);
 		}
-	}	
-				
+	}
 }
