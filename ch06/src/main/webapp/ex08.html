@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+
+	
+	window.addEventListener("load",function(){
+		var imgElement = document.createElement("img");
+		imgElement.src="https://w.namu.la/s/45507892b4f48b2b3d4a6386f6dae20c28376a8ef5dfb68c7cc95249ec358e3e68df77594766021173b2e6acf374b79ce02e9eeef61fcdf316659e30289e123fbddf6e5ec3492eddbc582ee5a59a2ff5d6ee84f57ad19277d179b613614364ad";
+		imgElement.style.width="200px";
+		imgElement.alt="사진";
+		imgElement.title="사진타이틀";
+		imgElement['data-no'] = 10;	//비표준 속성(property X)
+
+		
+		setTimeout(function(){
+			document.body.appendChild(imgElement);
+
+		},2000);
+	});
+</script>
+</head>
+<body>
+	<h1 id='h' data-no='10'>DOM(Document Object Model)</h1>
+	<h2>3. HTML Element 속성 조작하기</h2>
+
+</body>
+</html>
