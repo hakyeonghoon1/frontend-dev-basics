@@ -5,22 +5,35 @@
 <title>Insert title here</title>
 <script>
 
-	
 	window.addEventListener("load",function(){
 
 		//1.아이디로 가져오기
 		var header01 = document.getElementById('header-01');
 		var header02 = document.getElementById('header-02');
+		
 		//2.Tag Name 가져오기
 		var h4s = document.getElementsByTagName("h4");
+		
 		//3.Class Name 가져오기
+		var h5s = document.getElementsByClassName("header")
+		
 		//4.CSS 선택자로 가져오기
+		var header7 = document.querySelector("#header-07");
+		var h6s = document.querySelectorAll(".header2");
+		
 		setTimeout(function(){
 			header01.innerText+=' by getElementById()';
 			header02.innerText+=' by getElementById()';
 			
 			h4s[0].innerText+=' by getElementByTagName()';
 			h4s[1].innerText+=' by getElementByTagName()';
+			
+			h5s[0].innerText+=' by getElementByClassName()';
+			h5s[1].innerText+=' by getElementByClassName()';
+		
+			header7.innerText += ' by querySelector()';
+			h6s[1].innerText +=' by querySelectorAll()';
+			
 		},2000);
 	});
 </script>
@@ -33,5 +46,11 @@
 	
 	<h4>header 03</h4>
 	<h4>header 04</h4>
+	
+	<h5 class='header'>header 05</h5>
+	<h5 class='header'>header 06</h5>
+	
+	<h6 id="header-07" class='header2'>header 07</h6>
+	<h6 id="header-08" class='header2'>header 08</h6>
 </body>
 </html>
