@@ -8,6 +8,8 @@
 <script>
 
 	$(function(){
+		console.log('load');
+		
 		var $obj = $(".par");
 		$obj.click(function(){
 			console.log("clicked:"+this);
@@ -16,12 +18,13 @@
 		setTimeout(function(){
 			$obj.css('color','red');
 		},2000);
+		
 	});
 		
 </script>
 </head>
 <body>
-	<h1 id="header">Simple jQuery 만들기1</h1>
+	<h1 id="header">Simple jQuery 만들기2</h1>
 	<p class='par'>문장1</p>
 	<p>문장2</p>
 	<p class='par'>문장3</p>
