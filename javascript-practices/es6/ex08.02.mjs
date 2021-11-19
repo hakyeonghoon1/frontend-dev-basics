@@ -1,0 +1,16 @@
+/**
+ *  
+ *  Unnamed export with default keyword
+ *  
+ *  이름없는 객체를 하나 export하는 경우
+ */
+
+ export default {
+    add : function(a,b){
+        return a+b;
+    },
+    substract: function(a,b){
+        return a-b;
+    }
+}
+
